@@ -9,10 +9,10 @@ import argparse
 sys.path.append('../')
 
 
-import common.drifts as drifts
-import common.networks as networks
-import common.rollouts as rollouts
-import common.sbtm_sequential as sbtm_sequential
+import drifts as drifts
+import networks as networks
+import rollouts as rollouts
+import sbtm_sequential as sbtm_sequential
 
 
 from tqdm.auto import tqdm
