@@ -14,13 +14,11 @@ import numpy as onp
 from jaxlib.xla_extension import Device
 import optax
 
+import networks
+import rollouts
 
 State = onp.ndarray
 Time = float
-
-
-from . import networks
-from . import rollouts
 
 
 @dataclass

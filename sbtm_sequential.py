@@ -19,10 +19,10 @@ from haiku import Params
 from typing import Tuple
 
 
-from . import sbtm_sim
-from . import updates
-from . import losses
-from .sbtm_analysis import compute_entropy_rate
+import sbtm_sim
+import updates
+import losses
+from sbtm_analysis import compute_entropy_rate
 
 
 @dataclass
@@ -221,7 +221,7 @@ class DenoisingSequentialSBTM(SequentialSBTM):
         ) -> float:
             """
             Compute the denoising loss on a single sample, using antithetic sampling
-            over the noise for variance reduction.o
+            over the noise for variance reduction.
             """
             loss = 0
             for sign in [-1, 1]:
