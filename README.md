@@ -4,7 +4,7 @@ This repository provides an efficient implementation in ``jax`` of the score-bas
 More generally, it provides an efficient implementation in ``jax`` of score-based transport solutions of the Fokker-Planck equation. This method may also find applications in flow-based solutions of other high-dimensional partial differential equations using machine learning.
 
 # Installation
-The implementation is built on Google's [``jax``](https://github.com/google/jax) package for accelerated linear algebra and Deepmind's [``haiku``](https://github.com/deepmind/dm-haiku) package for neural networks. Both can be installed by following the guidelines at the linked repository.
+The implementation is built on Google's [``jax``](https://github.com/google/jax) package for accelerated linear algebra and Deepmind's [``haiku``](https://github.com/deepmind/dm-haiku) package for neural networks. Both can be installed by following the guidelines at the linked repositories.
 
 # Usage
 Experiments from the paper can be reproduced by running the files contained in the ``experiments`` directory.
