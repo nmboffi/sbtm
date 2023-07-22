@@ -14,8 +14,8 @@ import jax.numpy as np
 import numpy as onp
 import haiku as hk
 from typing import Callable, Tuple, Union
-from . import losses
-from . import updates
+import losses
+import updates
 import optax
 import dill as pickle
 import time

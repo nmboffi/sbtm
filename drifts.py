@@ -30,16 +30,19 @@ def active_swimmer(
 
 
 def harmonic_trap(
-    particle_pos: np.ndarray,
+    x: np.ndarray,
     t: float,
-    compute_mut: Callable[[float], np.ndarray]
+    compute_mut: Callable[[float], np.ndarray],
+    N: int,
+    d: int
 ) -> np.ndarray:
     """Forcing for particles in a harmonic trap with harmonic repulsion."""
     mut = compute_mut(t)
+    particle_pos = x.reshape((N, d))
     particle_forces = -0.5*particle_pos + mut[None, :] \
-            - 0.5*np.mean(particle_pos, axis=0)
+            - 0.5*np.mean(particle_pos, axis=0)[None, :]
 
-    return particle_forces
+    return particle_forces.ravel()
 
 
 def gaussian_interaction(
@@ -80,7 +83,6 @@ def anharmonic_gaussian(
         print()
 
     return particle_forces.ravel()
-
 
 
 def anharmonic(

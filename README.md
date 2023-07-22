@@ -2,7 +2,7 @@
 
 <img src="figs/phase_portrait.pdf"  width="675" height="300">
 
-This repository contains code to reproduce results of the paper [1].
+This repository provides an efficient implementation in ``jax`` of the score-based transport modeling algorithm for solving the Fokker-Planck equation in high dimension.
 
 More generally, it provides an efficient implementation in ``jax`` of score-based transport solutions of the Fokker-Planck equation. This method may also find applications in flow-based solutions of other high-dimensional partial differential equations using machine learning.
 
@@ -32,3 +32,5 @@ If you found this repository useful, please consider citing
       primaryClass={cs.LG}
 }
 ```
+
+<img src="figs/phase_portrait.png" width=50% height=50%>
